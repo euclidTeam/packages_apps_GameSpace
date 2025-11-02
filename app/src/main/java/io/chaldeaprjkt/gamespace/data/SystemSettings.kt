@@ -22,8 +22,6 @@ import android.provider.Settings
 import io.chaldeaprjkt.gamespace.utils.GameModeUtils
 import javax.inject.Inject
 
-import lineageos.providers.LineageSettings
-
 class SystemSettings @Inject constructor(
     context: Context,
     private val gameModeUtils: GameModeUtils
@@ -61,13 +59,13 @@ class SystemSettings @Inject constructor(
         }
 
     var threeScreenshot
-        get() = Settings.Secure.getIntForUser(
-            resolver, "nothing_three_finger_screenshot", 0,
+        get() = Settings.System.getIntForUser(
+            resolver, Settings.System.SWIPE_TO_SCREENSHOT, 0,
             UserHandle.USER_CURRENT
         )
         set(value) {
-            Settings.Secure.putIntForUser(
-                resolver, "nothing_three_finger_screenshot",
+            Settings.System.putIntForUser(
+                resolver, Settings.System.SWIPE_TO_SCREENSHOT,
                 value, UserHandle.USER_CURRENT
             )
         }

@@ -50,12 +50,12 @@
             android:summary="%s"
             android:title="@string/ringer_mode_title" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.euclid.support.preferences.SystemSettingSwitchPreference
             android:key="gamespace_suppress_fullscreen_intent"
             android:summary="@string/suppress_fullscreen_intent_summary"
             android:title="@string/suppress_fullscreen_intent_title" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.euclid.support.preferences.SystemSettingSwitchPreference
             android:key="bypass_charge_enabled"
             android:summary="@string/bypass_charge_enabled_title"
             android:title="@string/bypass_charge_enabled_summary"
@@ -84,7 +84,7 @@
             android:key="gamespace_lock_gesture"
             android:title="@string/lock_gesture_title" />
             
-        <com.crdroid.settings.preferences.CustomSeekBarPreference
+        <com.euclid.support.preferences.CustomSeekBarPreference
             android:key="gamespace_menu_opacity"
             android:title="@string/gamespace_menu_opacity_title"
             android:defaultValue="100"
